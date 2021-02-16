@@ -1,0 +1,300 @@
+/* Custom Fonts */
+@font-face {
+    font-family: Avenir;
+    src: url("fonts/AvenirLTStd-Light.otf") format("opentype");
+}
+
+@font-face {
+    font-family: Avenir;
+    font-weight: bold;
+    src: url("fonts/AvenirLTStd-Black.otf") format("opentype");
+}
+
+/* Global CSS */
+body, html {
+    position: fixed;
+}
+
+body {
+    margin: 0px;
+    font-family: 'Avenir', sans-serif;
+    background-color: white;
+    color: black;
+}
+
+h1, h2 {
+    font-weight: normal;
+}
+
+/* CS 48 stuff - remove later */
+.cs48-welcome {
+    position: fixed;
+    top: 5vh;
+    left: 5vh;
+    color: white;
+}
+
+.cs48-welcome h1 {
+    font-size: 6vh;
+    font-weight: bold;
+}
+
+.cs48-welcome h2 {
+    margin: 0;
+    margin-left: 3vh;
+    font-size: 3vh;
+}
+
+.cs48-content {
+    position: fixed;
+    top: 5vh;
+    right: 5vh;
+    width: 40vw;
+    color: white;
+}
+
+.cs48-content h1 {
+    font-size: 5vh;
+    font-weight: bold;
+}
+
+.cs48-content p {
+    font-size: 3vh;
+    font-weight: bold;
+}
+
+.cs48-content li {
+    font-size: 3vh;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.darken {
+    position: fixed;
+    object-fit: cover;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.blackout {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-color: black;
+    z-index: 1;
+}
+
+/* Classes */
+.background-image img {
+    position: fixed;
+    object-fit: cover;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.clock {
+    position: fixed;
+    bottom: 5vh;
+    left: 5vh;
+    color: white;
+    font-weight: bold;
+    
+}
+
+.clock .time {
+    margin: 0;
+    font-size: 30vh;
+}
+
+.clock .date {
+    margin: 0;
+    font-size: 10vh;
+    padding-left: 3vh;
+}
+
+.clock .caption {
+    margin: 0;
+    margin-top: 10px;
+    font-size: 2vh;
+}
+
+.fullscreen-button {
+    z-index: 7;
+}
+
+.fullscreen-button button {
+    width: 12vw;
+    height: 5vh;
+    font-size: 3vh;
+}
+
+.content {
+    position: fixed;
+    bottom: 6vh;
+    right: 5vh;
+    text-align: right;
+    color: #dddddd;
+}
+
+.content .title {
+    margin: 0;
+    font-size: 4vh;
+}
+
+.content .artist {
+    margin: 0;
+    margin-top: 1vh;
+    font-size: 2vh;
+}
+
+.settings-button {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+
+.icon-button {
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+    border: 0px;
+    color: #555555;
+    font-size: 15px;
+}
+
+.settings {
+    position: fixed;
+    padding: 2vh 5vw;
+    width: 90vw;
+    height: 96vh;
+    left: 0;
+    top: 0;
+    background-color: white;
+}
+
+.settings .settings-header {
+    width: 100%;
+    height: 50px;
+}
+
+.settings .settings-options {
+    margin: 0 5vh;
+    height: calc(96vh - 4vh - 50px);
+    overflow-y: auto;
+}
+
+.settings .settings-options .option {
+    height: 48px;
+    padding: 8px 20px;
+    border: 0.5px none #888;
+    border-bottom-style: solid;
+}
+
+.settings .settings-options .first {
+    border-top-style: solid;
+}
+
+.settings .settings-options .option p {
+    margin: 0;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    padding-top: 12px;
+    font-size: 20px;
+    width: calc(60% - 10px);
+    display: inline-block;
+}
+
+.settings .settings-options .option .multi-line {
+    margin: 0;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    width: calc(60% - 10px);
+    display: inline-block;
+}
+
+.settings .settings-options .option .multi-line p {
+    width: 100%;
+    padding-top: 0;
+    display: block;
+}
+
+.settings .settings-options .option .multi-line .sub {
+    font-size: 12px;
+}
+
+.settings .settings-options .option .actions {
+    width: 40%;
+    text-align: right;
+    display: inline-block;
+}
+
+.settings .settings-options .option .actions button, .settings .settings-options .option .actions input, .settings .settings-options .option .actions select {
+    height: 40px;
+    min-width: 100px;
+    padding: 2px;
+    border: 2px solid black;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 15px;
+    font-family: 'Avenir', sans-serif;
+}
+
+.settings hr {
+    border: 1px solid #333;
+    margin: 0;
+}
+
+.settings h1 {
+    text-align: center;
+}
+
+.settings .icon-button {
+    position: fixed;
+    top: 2vh;
+    right: 5vw;
+}
+
+/* Animations */
+.fadein-animation {
+    -webkit-animation: fadein 0.5s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 0.5s; /* Firefox < 16 */
+        -ms-animation: fadein 0.5s; /* Internet Explorer */
+         -o-animation: fadein 0.5s; /* Opera < 12.1 */
+            animation: fadein 0.5s;
+}
+
+.fadein-animation-2s {
+    -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 2s; /* Firefox < 16 */
+        -ms-animation: fadein 2s; /* Internet Explorer */
+         -o-animation: fadein 2s; /* Opera < 12.1 */
+            animation: fadein 2s;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+.fadeout-animation {
+    -webkit-animation: fadeout 0.5s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadeout 0.5s; /* Firefox < 16 */
+        -ms-animation: fadeout 0.5s; /* Internet Explorer */
+         -o-animation: fadeout 0.5s; /* Opera < 12.1 */
+            animation: fadeout 0.5s;
+}
+
+@keyframes fadeout {
+    from { opacity: 1; }
+    to   { opacity: 0; }
+}
