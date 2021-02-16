@@ -5,6 +5,7 @@ var imageDiv = document.getElementById('images');
 var captionText = document.getElementById('caption');
 var settingsMenu = document.getElementById("settingsMenu");
 var blackout = document.getElementById("blackout");
+var audioElement = document.getElementById("musicElement");
 
 // Functions to control state of frame
 var frameConfig = {
@@ -18,12 +19,21 @@ var frameConfig = {
     image: {
         source: "Reddit",
         subreddit: "r/EarthPorn",
-        rate: 60
+        rate: 3600
     }
 };
 
 function goFullScreen() {
     mainDiv.requestFullscreen();
+
+    audioElement.volume = 0;
+    audioElement.play();
+
+    setTimeout(() => {
+        setInterval(() => {
+            audioElement.currentTime = 5.058;
+        }, 41790);
+    }, 5058);
 }
 
 // Functions to control date and time
