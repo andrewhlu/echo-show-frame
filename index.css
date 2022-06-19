@@ -264,6 +264,17 @@ h1, h2 {
     right: 5vw;
 }
 
+.show-ip-debug {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+}
+
+.show-ip-debug p {
+    margin: 0;
+    color: white;
+}
+
 /* Animations */
 .fadein-animation {
     -webkit-animation: fadein 0.5s; /* Safari, Chrome and Opera > 12.1 */
